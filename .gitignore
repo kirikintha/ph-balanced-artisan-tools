@@ -1,0 +1,27 @@
+.DS_Store
+.env.*
+.env
+
+# Ignore SSL certificates
+*.crt
+*.pem
+*.cer
+*.key
+
+# Ignore SSL certificates in specific directories
+certs/
+ssl/
+
+*.log
+
+# Ignore compressed files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.gz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.tgz
