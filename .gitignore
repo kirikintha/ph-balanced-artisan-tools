@@ -2,6 +2,10 @@
 .env.*
 .env
 
+out/
+src/
+dist/
+
 # Ignore SSL certificates
 *.crt
 *.pem
