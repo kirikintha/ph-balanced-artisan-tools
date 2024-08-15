@@ -27,4 +27,4 @@ jobs:
       - name: Publish the VS Code extension
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx vsce publish
+        run: npm run vsce publish

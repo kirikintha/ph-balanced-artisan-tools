@@ -71,7 +71,7 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
-    "package": "vsce package"
+    "package": "npx vsce package"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
