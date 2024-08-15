@@ -1,6 +1,6 @@
 # Define the package target
 package-extension:
-	@echo "Packaging Laravel Tools Extension"
+	@echo "Packaging Artisan Tools Extension"
 	npx vsce package
 
 # Alias for the package-extension target

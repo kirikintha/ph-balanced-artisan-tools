@@ -1,6 +1,6 @@
 {
-  "name": "laravel-tools",
-  "displayName": "laravel-tools",
+  "name": "artisan-tools",
+  "displayName": "artisan-tools",
   "description": "Tools for generating items with artisan",
   "version": "0.0.1",
   "engines": {
@@ -21,43 +21,43 @@
   "contributes": {
     "viewsWelcome": [
       {
-        "view": "laravelTools",
+        "view": "artisanTools",
         "contents": "Please open a laravel workspace to see the commands. [learn more](https://laravel.com/docs/11.x/artisan)\n Artisan must be present and executable from the root of your workspace"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "laravelToolsContainer",
-          "title": "Laravel Tools",
+          "id": "artisanToolsContainer",
+          "title": "Artisan Tools",
           "icon": "resources/laravel.svg"
         }
       ]
     },
     "views": {
-      "laravelToolsContainer": [
+      "artisanToolsContainer": [
         {
-          "id": "laravelTools",
-          "name": "Laravel Tools"
+          "id": "artisanTools",
+          "name": "Artisan Tools"
         }
       ]
     },
     "commands": [
       {
-        "command": "laravelTools.refresh",
-        "title": "Refresh Laravel Tools",
+        "command": "artisanTools.refresh",
+        "title": "Refresh Artisan Tools",
         "icon": "$(refresh)"
       },
       {
-        "command": "laravelTools.make",
+        "command": "artisanTools.make",
         "title": "Run Artisan Make"
       }
     ],
     "menus": {
       "view/title": [
         {
-          "command": "laravelTools.refresh",
-          "when": "view == laravelTools",
+          "command": "artisanTools.refresh",
+          "when": "view == artisanTools",
           "group": "navigation"
         }
       ]
@@ -85,9 +85,7 @@
     "eslint": "^8.57.0",
     "rollup": "^4.20.0",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.4.5"
-  },
-  "dependencies": {
+    "typescript": "^5.4.5",
     "vsce": "^2.15.0"
   }
 }
