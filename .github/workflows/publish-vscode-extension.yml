@@ -10,23 +10,24 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    environment: release
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Package the VS Code extension
-      run: npm run package
+      - name: Package the VS Code extension
+        run: npm run package
 
-    - name: Publish the VS Code extension
-      env:
-        VSCE_PAT: ${{ secrets.VSCE_PAT }}
-      run: npx vsce publish
+      - name: Publish the VS Code extension
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npx vsce publish
