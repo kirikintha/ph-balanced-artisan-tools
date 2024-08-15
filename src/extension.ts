@@ -15,7 +15,7 @@ import { ArtisanTreeDataProvider } from './treedata.provider';
 export function activate(context: vscode.ExtensionContext) {
   const artisanData = new ArtisanTreeDataProvider();
 
-  const treeView = vscode.window.createTreeView('laravelTools', {
+  const treeView = vscode.window.createTreeView('artisanTools', {
     treeDataProvider: artisanData,
   });
 
@@ -34,21 +34,21 @@ export function activate(context: vscode.ExtensionContext) {
     100,
   );
   statusBarItem.text = '$(tools) Artisan';
-  statusBarItem.command = 'laravelTools.showChannel';
+  statusBarItem.command = 'artisanTools.showChannel';
   statusBarItem.show();
 
   // Add a command to refresh the view
-  vscode.commands.registerCommand('laravelTools.refresh', () => {
+  vscode.commands.registerCommand('artisanTools.refresh', () => {
     artisanData.refresh();
   });
 
   context.subscriptions.push(
-    vscode.commands.registerCommand('laravelTools.make', (command: string) => {
+    vscode.commands.registerCommand('artisanTools.make', (command: string) => {
       artisanData.make(command, statusBarItem);
     }),
   );
 
-  vscode.commands.registerCommand('laravelTools.showChannel', () => {
+  vscode.commands.registerCommand('artisanTools.showChannel', () => {
     artisanData.showChannel();
   });
 

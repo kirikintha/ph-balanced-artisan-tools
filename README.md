@@ -1,6 +1,6 @@
-# Laravel Tools README
+# Artisan Tools README
 
-Laravel Tools is a Visual Studio Code extension that provides a set of tools to enhance your Laravel development experience. This extension includes features such as running artisan make commands directly from the sidebar.
+Artisan Tools is a Visual Studio Code extension that provides a set of tools to enhance your Laravel development experience. This extension includes features such as running artisan make commands directly from the sidebar.
 
 > [!IMPORTANT]
 I have been using Laravel for ten years, and started this extension locally and wanted to give back to the community.
