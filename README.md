@@ -1,6 +1,10 @@
 # Laravel Tools README
 
-Laravel Tools is a Visual Studio Code extension that provides a set of tools to enhance your Laravel development experience. This extension includes features such as running artisan commands directly from the sidebar.
+Laravel Tools is a Visual Studio Code extension that provides a set of tools to enhance your Laravel development experience. This extension includes features such as running artisan make commands directly from the sidebar.
+
+> [!IMPORTANT]
+I have been using Laravel for ten years, and started this extension locally and wanted to give back to the community.
+This is *not* approved, sponsored, or affiliated by the good people who make Laravel and I have no monetary stake in this. Laravel is trademarked see: https://laravel.com/trademark - there is no commercial use implied in this extension. This is simply to pay it forward for folks who may need to have a comprehensive list of things to do in artisan make or have accessibility issues with using the command line.
 
 ## Features
 
@@ -9,22 +13,26 @@ Laravel Tools is a Visual Studio Code extension that provides a set of tools to 
 
 ### Screenshots
 
-\!\[Artisan Commands Sidebar\](images/artisan-commands-sidebar.png)
+<figure>
+  <img src="resources/init.gif" alt="Initializing Commands in Workspace" />
+  <figcaption>Initializing Commands in Workspace</figcaption>
+</figure>
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<figure>
+  <img src="resources/create.gif" alt="Using make:class to create a new class" />
+  <figcaption>Using make:class to create a new class</figcaption>
+</figure>
+
+<figure>
+  <img src="resources/failure.gif" alt="Feedback if a command fails to run" />
+  <figcaption>Feedback if a command fails to run</figcaption>
+</figure>
 
 ## Requirements
 
+- Composer
 - PHP installed on your system.
 - A Laravel project with the `artisan` file in the root directory.
-
-## Installation
-
-1. Download the `.vsix` file from the releases page.
-2. Open Visual Studio Code.
-3. Go to the Extensions view (`Cmd+Shift+X`).
-4. Click the three-dot menu and select `Install from VSIX...`.
-5. Select the downloaded `.vsix` file.
 
 ## Usage
 
