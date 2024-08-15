@@ -1,8 +1,9 @@
 {
   "name": "artisan-tools",
-  "displayName": "artisan-tools",
-  "description": "Tools for generating items with artisan",
-  "version": "0.0.1",
+  "publisher": "kirikintha",
+  "displayName": "Artisan Tools",
+  "description": "Tools for generating items with artisan make commands",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.92.0"
   },

@@ -1,15 +1,17 @@
 import * as assert from 'assert';
-
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
 import * as vscode from 'vscode';
-// import * as myExtension from '../../extension';
 
 suite('Extension Test Suite', () => {
-	vscode.window.showInformationMessage('Start all tests.');
+  vscode.window.showInformationMessage('Start all tests.');
 
-	test('Sample test', () => {
-		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
-		assert.strictEqual(-1, [1, 2, 3].indexOf(0));
-	});
+  test('Extension should activate without issues', async () => {
+    const extensionId = 'kirikintha.artisan-tools';
+    const extension = vscode.extensions.getExtension(extensionId);
+    assert.ok(extension, 'Extension not found');
+
+    if (extension) {
+      await extension.activate();
+      assert.ok(extension.isActive, 'Extension did not activate successfully');
+    }
+  });
 });
