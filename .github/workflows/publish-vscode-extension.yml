@@ -21,23 +21,7 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies
-        run: npm install --include=dev
-
-      # This isn't really needed now, but if the repo
-      # changes to have release dependencies it will be in the future
-      - name: Run Audit Fix
-        run: npm audit fix --omit=dev
-
-      # Even though this is technically a release, since it it the only workflow
-      # that will be run, this is still a good practice.
-      - name: Run lint
-        run: npx eslint ./src --flag unstable_ts_config
-
-      - name: Package the VS Code extension
-        run: npx vsce package
-
       - name: Publish the VS Code extension
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx vsce publish
+        run: ${GITHUB_WORSKPACE}/scripts/publish-vscode-extension.sh
