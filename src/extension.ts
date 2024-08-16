@@ -44,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand('artisanTools.make', (command: string) => {
-      artisanData.make(command, statusBarItem);
+      artisanData.make(command);
     }),
   );
 
