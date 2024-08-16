@@ -17,7 +17,7 @@
   },
   "license": "ISC",
   "activationEvents": [],
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
   "icon": "resources/generator.png",
   "contributes": {
     "viewsWelcome": [
@@ -80,12 +80,12 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/eslint__js": "^8.42.3",
     "@types/mocha": "^10.0.7",
-    "@types/node": "22.x",
+    "@types/node": "^22.4.0",
     "@types/vscode": "^1.92.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/vsce": "^2.15.0",
+    "@vscode/vsce": "^3.0.0",
     "eslint": "^9.9.0",
     "globals": "^15.9.0",
     "jiti": "^1.21.6",
