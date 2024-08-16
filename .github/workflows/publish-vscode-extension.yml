@@ -32,7 +32,7 @@ jobs:
       # Even though this is technically a release, since it it the only workflow
       # that will be run, this is still a good practice.
       - name: Run lint
-        run: npm run lint
+        run: eslint
 
       - name: Package the VS Code extension
         run: npm run vscode:package
