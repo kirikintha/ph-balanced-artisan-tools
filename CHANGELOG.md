@@ -1,9 +1,3 @@
 # Change Log
 
-All notable changes to the "artisan-tools" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+Please refer to https://github.com/kirikintha/ph-balanced-artisan-tools/releases for information on the current relase
