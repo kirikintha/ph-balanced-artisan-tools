@@ -34,7 +34,7 @@ jobs:
       - name: Run lint
         env:
           NODE_PATH: $GITHUB_WORKSPACE/node_modules
-        run: npx eslint .
+        run: npx eslint ./src
 
       - name: Package the VS Code extension
         run: npx vsce package

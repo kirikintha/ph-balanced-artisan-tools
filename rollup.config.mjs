@@ -1,4 +1,4 @@
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 
@@ -11,7 +11,7 @@ export default {
   },
   external: ['vscode'],
   plugins: [
-    resolve(),
+    nodeResolve(),
     commonjs(),
     typescript({ tsconfig: './tsconfig.rollup.json' }),
   ],
