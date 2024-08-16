@@ -19,9 +19,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '22'
+          node-version: '20'
+          cache: 'npm'
 
       - name: Publish the VS Code extension
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: '${GITHUB_WORSKPACE}/scripts/publish-vscode-extension.sh'
+        run: './scripts/publish-vscode-extension.sh'
