@@ -10,7 +10,7 @@ optimize-animated-gifs:
 	@scripts/optimize-animated-gifs.sh
 npm-audit:
 	@echo "Checking npm dependencies"
-	@scripts/npm-check.sh
+	@scripts/npm-audit.sh
 
 # Alias for the package-extension target
 package: package-extension
