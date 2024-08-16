@@ -24,4 +24,4 @@ jobs:
       - name: Publish the VS Code extension
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: '${GITHUB_WORSKPACE}/scripts/publish-vscode-extension.sh'
+        run: './scripts/publish-vscode-extension.sh'
