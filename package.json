@@ -69,7 +69,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
-    "lint": "./node_modules/.bin/eslint",
+    "lint": "eslint",
     "test": "vscode-test",
     "vscode:package": "vsce package",
     "vscode:publish": "vsce publish"
