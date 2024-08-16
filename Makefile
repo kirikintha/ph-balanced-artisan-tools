@@ -4,7 +4,10 @@ package-extension:
 	npx vsce package
 optimize-animated-gifs:
 	@echo "Optimizing files"
-	./optimize-animated-gifs.sh
+	@scripts/optimize-animated-gifs.sh
+npm-audit:
+	@echo "Checking npm dependencies"
+	@scripts/npm-check.sh
 
 # Alias for the package-extension target
 package: package-extension

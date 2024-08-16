@@ -80,13 +80,14 @@
     "@types/node": "22.x",
     "@types/vscode": "^1.92.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
-    "@typescript-eslint/parser": "^7.11.0",
+    "@typescript-eslint/parser": "^8.1.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.9.0",
     "rollup": "^4.20.0",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.4.5",
-    "vsce": "^2.15.0"
+    "typescript": "^5.5.4",
+    "vsce": "^2.15.0",
+    "npm-check": "^6.0.1",
+    "npm-check-updates": "^17.0.6"
   }
 }
