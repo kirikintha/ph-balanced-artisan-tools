@@ -65,13 +65,14 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run rollup -c rollup.config.mjs",
+    "vscode:prepublish": "rollup -c rollup.config.mjs",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
-    "lint": "npm run eslint",
+    "lint": "eslint",
     "test": "vscode-test",
-    "package": "npm run vsce package"
+    "vscode:package": "vsce package",
+    "vscode:publish": "vsce publish"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
