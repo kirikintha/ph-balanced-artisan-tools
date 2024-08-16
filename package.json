@@ -65,13 +65,13 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npx rollup -c rollup.config.mjs",
+    "vscode:prepublish": "npm run rollup -c rollup.config.mjs",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
-    "lint": "npx eslint",
+    "lint": "npm run eslint",
     "test": "vscode-test",
-    "package": "npx vsce package"
+    "package": "npm run vsce package"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
