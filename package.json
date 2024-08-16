@@ -74,6 +74,7 @@
     "package": "npx vsce package"
   },
   "devDependencies": {
+    "@eslint/js": "^9.9.0",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/mocha": "^10.0.7",
@@ -83,12 +84,13 @@
     "@typescript-eslint/parser": "^8.1.0",
     "@vscode/test-cli": "^0.0.10",
     "eslint": "^9.9.0",
+    "globals": "^15.9.0",
     "npm-check": "^6.0.1",
     "npm-check-updates": "^17.0.6",
     "rollup": "^4.20.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.1.0",
-    "vsce": "^2.15.0"
+    "@vscode/vsce": "^2.15.0"
   }
 }
