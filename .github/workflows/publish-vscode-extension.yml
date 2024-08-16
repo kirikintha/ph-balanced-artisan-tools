@@ -32,8 +32,6 @@ jobs:
       # Even though this is technically a release, since it it the only workflow
       # that will be run, this is still a good practice.
       - name: Run lint
-        env:
-          NODE_PATH: $GITHUB_WORKSPACE/node_modules
         run: npx eslint ./src
 
       - name: Package the VS Code extension
