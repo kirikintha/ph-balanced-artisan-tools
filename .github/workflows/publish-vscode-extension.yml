@@ -24,15 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm install --include=dev
 
-      - name: List Information
-        run: npm list --depth=0 --json && ls -la node_modules
-
-      - name: Show Paths
-        run: echo $GITHUB_WORKSPACE && echo $GITHUB_REPOSITORY
-
-      - name: Show NPM Bin
-        run: ls -al $GITHUB_WORKSPACE/node_modules/.bin
-
       # This isn't really needed now, but if the repo
       # changes to have release dependencies it will be in the future
       - name: Run Audit Fix
@@ -41,6 +32,8 @@ jobs:
       # Even though this is technically a release, since it it the only workflow
       # that will be run, this is still a good practice.
       - name: Run lint
+        env:
+          NODE_PATH: $GITHUB_WORKSPACE/node_modules
         run: npx eslint .
 
       - name: Package the VS Code extension
