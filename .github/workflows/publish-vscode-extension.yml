@@ -35,9 +35,9 @@ jobs:
         run: npm run lint
 
       - name: Package the VS Code extension
-        run: npx vsce package
+        run: npm run vscode:package
 
       - name: Publish the VS Code extension
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx vsce publish
+        run: npm run vscode:publish
