@@ -12,3 +12,9 @@ vsc-extension-quickstart.md
 node_modules/**
 tsconfig.json
 rollup.config.mjs
+Makefile
+eslint.config.mjs
+ph-balanced-artisan-tools.code-workspace
+tsconfig.rollup.json
+scripts/**
+.github/**
