@@ -40,6 +40,7 @@ class ArtisanTreeDataProvider
     return element;
   }
 
+  // eslint-disable-next-line no-undef
   getChildren(element?: vscode.TreeItem): Thenable<vscode.TreeItem[]> {
     if (element) {
       return Promise.resolve([]);
