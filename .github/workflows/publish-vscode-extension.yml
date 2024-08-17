@@ -19,6 +19,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      # @TODO - automaticall bump the package version when we create a version tag
       - name: Publish the VS Code extension
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
