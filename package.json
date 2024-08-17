@@ -1,6 +1,6 @@
 {
   "name": "artisan-tools",
-  "publisher": "kirikintha",
+  "publisher": "ph-balanced-solutions",
   "displayName": "Artisan Tools",
   "description": "Tools for generating items with artisan make commands",
   "version": "1.0.0",
@@ -13,7 +13,7 @@
   "author": "https://github.com/kirikintha",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kirikintha/ph-balanced-laravavel-cli"
+    "url": "https://github.com/kirikintha/ph-balanced-artisan-tools"
   },
   "license": "ISC",
   "activationEvents": [],
