@@ -36,10 +36,7 @@ This is *not* approved, sponsored, or affiliated by the good people who make Lar
 
 ## Usage
 
-1. Open a Laravel project in Visual Studio Code.
-2. Open the Command Palette (`Cmd+Shift+P`) and run `Run Bash Script`.
-3. The sidebar will populate with available artisan commands.
-4. Click on any command to execute it.
+Use the sidebar to run commands!
 
 ## Contributing
 
