@@ -3,7 +3,7 @@
   "publisher": "ph-balanced-solutions",
   "displayName": "Artisan Tools",
   "description": "Tools for generating items with artisan make commands",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
     "vscode": "^1.92.0"
   },
