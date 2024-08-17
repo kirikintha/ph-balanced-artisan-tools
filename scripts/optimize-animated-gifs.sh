@@ -13,7 +13,7 @@ for file in "$DIRECTORY"/*.gif; do
         if [ "$frames" -gt 1 ]; then
             # Apply ffmpeg to optimize the GIF
             optimized="${file%.gif}.optimized.gif"
-            ffmpeg -i "$file" -vf "fps=15,scale=$SCALE:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 "$optimized"
+            ffmpeg -i "$file" -vf "fps=15,scale=$SCALE:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop -1 "$optimized"
             if [ $? -eq 0 ]; then
                 rm "$file"
                 mv "$optimized" "$file"
