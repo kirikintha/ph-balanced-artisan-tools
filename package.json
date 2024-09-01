@@ -90,7 +90,7 @@
     "globals": "^15.9.0",
     "jiti": "^1.21.6",
     "npm-check": "^6.0.1",
-    "npm-check-updates": "^17.0.6",
+    "npm-check-updates": "^17.1.0",
     "rollup": "^4.20.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.5.4",
