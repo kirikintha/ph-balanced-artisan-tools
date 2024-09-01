@@ -86,7 +86,7 @@
     "@typescript-eslint/parser": "^8.1.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/vsce": "^3.0.0",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "globals": "^15.9.0",
     "jiti": "^1.21.6",
     "npm-check": "^6.0.1",
