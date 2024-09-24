@@ -91,7 +91,7 @@
     "jiti": "^1.21.6",
     "npm-check": "^6.0.1",
     "npm-check-updates": "^17.0.6",
-    "rollup": "^4.20.0",
+    "rollup": "^4.22.4",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.1.0"
